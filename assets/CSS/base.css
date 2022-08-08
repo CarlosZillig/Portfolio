@@ -1,0 +1,99 @@
+body {
+    font-family: var(--font-montserrat);
+    background-color: var(--dark-bg);
+    color: var(--white-f);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+main {
+    padding: 0 4em;
+}
+
+:root {
+    /*Fonts*/
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /*Font size*/
+    --title-font-size: 3.2em;
+    --big-font-size: 2.6em;
+    --medium-font-size: 1.5em;
+    --font-media: 1.23em;
+    --main-font-size: 1em;
+    --span-font-size: 0.8em;
+
+    /*Font colors*/
+    --white-f: rgb(255, 255, 255);
+    --purple-f: #6C63FF;
+    --blue-f: #73EEDC;
+
+    /*Colors*/
+    --white-color: #fff;
+    --black-color: #000;
+
+    /*Background colors*/
+    --dark-bg: #0F0F0F;
+    --light-bg: #57C4E5;
+    --purple-bg: #6C63FF;
+
+    /*Background sections*/
+    --header-bg: hsla(240, 2%, 13%, 0.8);
+
+    /*Hover and focus*/
+    --button-h: #61bbbe;
+}
+
+/*All styles of scrollbar*/
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--header-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 2%;
+    background-image: linear-gradient(180deg, var(--blue-f), var(--purple-bg));
+    border-radius: 20px;
+}
+
+.paragraph__email {
+    text-align: center;
+    font-size: var(--font-media);
+    border: 2px solid var(--purple-bg);
+    padding: 0.5em;
+}
+
+.fa-link {
+    font-size: 14px;
+    padding: 0 0.5em 0 0;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--white-f);
+    font-weight: 600;
+
+    padding: 0.5em 1em;
+    background-image: linear-gradient(10deg, var(--purple-bg), var(--button-h));
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 0 1.5em;
+    }
+
+    .button {
+        text-decoration: none;
+        color: var(--white-f);
+        font-weight: 600;
+    
+        padding: 0.5em 1em;
+        background-image: linear-gradient(10deg, var(--purple-bg), var(--button-h));
+        border-radius: 20px;
+
+        font-size: var(--main-font-size);
+    }
+}

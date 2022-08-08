@@ -1,0 +1,16 @@
+.presentation__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    padding: 4em 0;
+}
+
+@media screen and (max-width: 600px) {
+    .presentation__section {
+        display: block;
+        width: 100%;
+        padding: 5em 0 2em 0;
+    }
+}
+

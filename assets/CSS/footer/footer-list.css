@@ -1,0 +1,14 @@
+.footer__item {
+    padding: 1em 0;
+}
+
+.footer__link {
+    font-size: var(--title-font-size);
+    color: var(--blue-f);
+}
+
+.footer__link-email {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

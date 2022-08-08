@@ -1,0 +1,23 @@
+.works__section {
+    padding: 9em 0 5em 0;
+}
+
+.works__title {
+    font-size: var(--big-font-size);
+    color: var(--purple-f);
+    font-weight: 700;
+}
+
+.works__span {
+    font-size: var(--span-font-size);
+}
+
+@media screen and (max-width: 600px) {
+    .works__section {
+        padding: 6em 0 5em 0;
+    }
+
+    .works__span {
+        font-size: var(--main-font-size);
+    }
+}

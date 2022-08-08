@@ -1,0 +1,22 @@
+.header__container-span {
+    font-size: var(--subtitle-font-size);
+}
+
+.header__container-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header__container-mobile {
+        display: block;
+    }
+
+    .header__container-span {
+        font-size: var(--font-media);
+    }
+
+    .fa-bars {
+        font-size: var(--font-media);
+        padding: 0.5em;
+    }
+}

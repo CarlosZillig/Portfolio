@@ -1,0 +1,27 @@
+.header__projects {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin: 1em auto;
+
+    border-radius: 50px;
+    border: 1px solid #343435;
+    background-color: var(--header-bg);
+}
+
+.header__projects-title {
+    padding: 0.7em;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .header__projects {
+        margin: 1.5em auto;
+    }
+
+    .header__projects-title {
+        font-size: var(--font-media);
+        padding: 0.7em;
+        font-weight: 600;
+    }
+}

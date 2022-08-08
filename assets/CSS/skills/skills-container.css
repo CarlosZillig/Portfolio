@@ -1,0 +1,24 @@
+.skills__container {
+    width: 50%;
+}
+
+.skills__sub-container {
+    display: flex;
+    align-items: center;
+}
+
+.skills__container-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .skills__container {
+        width: 100%;
+    }
+
+    .skills__container-mobile {
+        width: 100%;
+        padding: 2em 0;
+    }
+}

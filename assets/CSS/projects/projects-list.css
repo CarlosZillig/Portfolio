@@ -1,0 +1,27 @@
+.projects__list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.projects__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    .projects__list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .projects__container-list {
+        width: 32.5%;
+    }
+}

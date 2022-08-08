@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg);
+    backdrop-filter: blur(1em);
+    
+
+    border-radius: 50px;
+    border: 1px solid #343435;
+
+    position: sticky;
+    top: 10px;
+
+    padding: 0.1em 7em;
+    z-index: 998;
+}
+
+.header__menu-mobile {
+    display: none;
+}
+
+

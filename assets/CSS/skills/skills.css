@@ -1,0 +1,21 @@
+.skills__section {
+    padding: 9em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__title {
+    color: var(--purple-f);
+    font-size: var(--big-font-size);
+    font-weight: 600;
+
+    padding: 0 0 1em 0;
+}
+
+@media screen and (max-width: 600px) {
+    .skills__section {
+        padding: 5em 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+}

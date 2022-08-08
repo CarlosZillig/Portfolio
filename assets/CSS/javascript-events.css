@@ -1,0 +1,22 @@
+.reveal {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s all ease-in;
+}
+
+.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.display-none {
+    display: none;
+}
+
+.active__menu {
+    left: 0;
+}
+
+.active__menu-background {
+    background-color: #0c0c0c;
+}

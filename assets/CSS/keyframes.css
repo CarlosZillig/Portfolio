@@ -1,0 +1,68 @@
+@keyframes slidein {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    40% {
+        transform: translate(0, -15px)
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes color {
+    0% {
+        color: #57C4E5;
+    }
+
+    50% {
+        color: #3b8ca5;
+    }
+
+    100% {
+        color: #57C4E5;
+    }
+}
+
+@keyframes progressBar {
+    0% {
+        border-color: #4d5353;
+    }
+
+    50% {
+        border-color: #acacac;
+    }
+
+    100% {
+        border-color: #4d5353;
+    }
+}
+
+@keyframes cursorAnimation {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--blue-f);
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: var(--purple-f);
+    }
+
+    50% {
+        border-color: #7972fd;
+    }
+
+    100% {
+        border-color: #5c54fc;
+    }
+}

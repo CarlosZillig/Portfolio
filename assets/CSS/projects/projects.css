@@ -1,0 +1,5 @@
+.projects__section {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}

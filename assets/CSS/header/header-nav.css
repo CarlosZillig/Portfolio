@@ -1,0 +1,27 @@
+.header__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header__item {
+    padding: 1em 0.5em;
+}
+
+.header__link {
+    font-size: var(--main-font-size);
+    text-decoration: none;
+    color: var(--white-f);
+    font-weight: 600;
+    transition: ease-out .3s;
+}
+
+.header__link:hover {
+    color: var(--button-h);
+}
+
+@media screen and (max-width: 600px) {
+    .header__nav {
+        display: none;
+    }
+}

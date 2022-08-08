@@ -1,0 +1,33 @@
+.skills__span {
+    width: 15%;
+}
+
+.progress__container {
+    border: 2px solid;
+    animation: progressBar 5s infinite;
+    width: 30%;
+    height: 20px;
+    padding: 0.2em;
+    border-radius: 20px;
+    margin: 1em;
+    width: 70%;
+}
+
+.progress__bar {
+    background: linear-gradient(50deg, var(--purple-f), var(--blue-f));
+    height: 100%;
+    border-radius: 20px;
+}
+
+.progress__bar-html{width: 80%;}
+.progress__bar-css{width: 80%;}
+.progress__bar-js{width: 40%;}
+.progress__bar-sass{width: 30%;}
+.progress__bar-tailwind{width: 70%;}
+.progress__bar-react{width: 0%;}
+
+@media screen and (max-width: 600px) {
+    .skills__span {
+        width: 22%;
+    }
+}
