@@ -3,7 +3,8 @@
 }
 
 .about__image {
-    max-width: 70%;
+    max-width: 75%;
+    animation: slidein 3s infinite;
 }
 
 .about__title {
@@ -22,12 +23,7 @@
 }
 
 .about__container-span {
-    color: var(--white-f);
     font-weight: 600;
-}
-
-.about__alura {
-    color: var(--white-f);
 }
 
 .about__button {
@@ -44,6 +40,10 @@
     border-radius: 20px;
 
     transition: .5s all;
+}
+
+.about__alura {
+    font-weight: 500;
 }
 
 @media screen and (max-width: 600px) {

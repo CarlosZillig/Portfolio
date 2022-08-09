@@ -3,15 +3,10 @@
 }
 
 .carousel__link {
-    color: var(--white-f);
     font-size: var(--main-font-size);
 
     padding: 0.8em 3em;
     transition: .5s all;
-}
-
-.button:hover {
-    box-shadow: 0px 0px 4px 1px #FFF;
 }
 
 @media screen and (max-width: 600px) {

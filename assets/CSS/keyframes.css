@@ -12,20 +12,6 @@
     }
 }
 
-@keyframes color {
-    0% {
-        color: #57C4E5;
-    }
-
-    50% {
-        color: #3b8ca5;
-    }
-
-    100% {
-        color: #57C4E5;
-    }
-}
-
 @keyframes progressBar {
     0% {
         border-color: #4d5353;
@@ -45,7 +31,7 @@
         border-color: transparent;
     }
     50% {
-        border-color: var(--blue-f);
+        border-color: var(--purple-f);
     }
 
     100% {
@@ -55,14 +41,22 @@
 
 @keyframes borderAnimation {
     0% {
-        border-color: var(--purple-f);
+        border-color: #0c0c0c;
     }
 
-    50% {
-        border-color: #7972fd;
+    20% {
+        border-color: #0c0c0c;
+    }
+
+    40% {
+        border-color: #292929;
+    }
+
+    70% {
+        border-color: #292929;
     }
 
     100% {
-        border-color: #5c54fc;
+        border-color: #000000;
     }
 }

@@ -10,11 +10,9 @@
 }
 
 .presentation__span--name {
-    /*color: var(--blue-f);*/
-    border-right: 3px solid var(--blue-f);
-    animation: 
-    color 3s infinite,
-    cursorAnimation 1s infinite;
+    color: var(--purple-f);
+    border-right: 3px solid;
+    animation: cursorAnimation 1s infinite;
     padding: 0 0.2em 0 0;
 }
 
@@ -34,10 +32,62 @@
 }
 
 .presentation__image {
-    max-width: 70%;
+    max-width: 80%;
     animation: slidein 3s infinite;
 }
 
+.presentation__subcontainer {
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: 170px 170px;
+    gap: 13px;
+}
+
+.presentation__btn {
+    padding: 0.5em 2em;
+    border: 2px solid;
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: all .5s ease-out;
+    text-align: center;
+}
+
+.presentation__btn-download--span {
+    grid-column: 2 span;
+    text-align: center;
+}
+
+.presentation__btn-linkedin {border-color: #0A66C2;}
+.presentation__btn-github {border-color: #161B22;}
+.presentation__btn-linkedin:hover{background-color: #0A66C2;}
+.presentation__btn-github:hover{background-color: #161B22;}
+.presentation__btn-download:hover{background-color: rgb(141, 43, 43);}
+
+.presentation__btn-download {
+    border-color: rgb(141, 43, 43);
+    grid-column: span 2;
+    position: relative;
+}
+
+.presentation__btn-download::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(141, 43, 43);
+    width: 50px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.fa-file-arrow-down {
+    font-size: 1.1em;
+    position: absolute;
+    top: 29%;
+    left: 5%;
+}
 @media screen and (max-width: 600px) {
     .presentation__container {
         text-align: center;
@@ -54,10 +104,20 @@
 
     .presentation__container-image {
         padding: 4em 0;
-     }
+    }
  
-     .presentation__image {
+    .presentation__image {
          width: 100%;
-     }
+    }
 
+    .presentation__subcontainer {
+        justify-content: center;
+        grid-template-columns: 140px 140px;
+        gap: 16px;
+    }
+
+    .presentation__btn {
+        padding: 1em 2em;
+        font-size: 1.1em;
+    }
 }

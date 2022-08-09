@@ -52,7 +52,6 @@ var body = document.body;
 
 menuButton.addEventListener('click', _ => {
   toggleMenu(menuSection)
-  body.classList.toggle('active__menu-background')
 });
 
 //Close menu mobile
@@ -61,32 +60,44 @@ btnCloseMenu.addEventListener('click', _ => {
   toggleMenu(menuSection)
 })
 
+//Open and close menu mobile when clicked
+const menuLinks = document.querySelectorAll('a[href^="#"]')
+menuLinks.forEach(item => {
+  item.addEventListener('click', _ => {
+    toggleMenu(menuSection)
+  });
+})
+
+//Light mode in all elements
+const btnTheme = document.querySelector(".btnTheme")
+btnTheme.addEventListener("click", _ => {
+  const body = document.body;
+  const a = document.querySelectorAll(".light__mode-on");
+  const header = document.querySelector(".header");
+  lightModeOn(body)
+
+  a.forEach(item => {
+    lightModeOn(item)
+  })
+
+  header.classList.toggle("header__light-mode")
+  menuLinks.forEach(item => {
+    item.classList.toggle("color__black")
+  })
+
+  //Add light theme in menu mobile
+  lightModeOn(menuSection)
+})
+
+
+//Functions
+
+//Open and close menu mobile
 const toggleMenu = function (element) {
   element.classList.toggle('active__menu');
 }
 
-const menuLinks = document.querySelectorAll('a[href^="#"]')
-
-for(let i = 0; i <= menuLinks.length; i++) {
-  menuLinks[i].addEventListener('click', _ => {
-    toggleMenu(menuSection);
-    scrollToSection();
-  })
-}
-
-function scrollToSection(event){
-  const distanceFromTheTop = getDistanceFromTheTop(event.target) - 100;
-  nativeScroll(distanceFromTheTop)
-}
-
-function getDistanceFromTheTop(element) {
-  const id = element.getAttribute("href");
-  return document.querySelector(id).offsetTop;
-}
-
-function nativeScroll(distanceFromTheTop) {
-  window.scroll({
-    top: distanceFromTheTop,
-    behavior: "smooth",
-  });
+//Add class light__mode
+const lightModeOn = function (element) {
+  element.classList.toggle('light__mode');
 }

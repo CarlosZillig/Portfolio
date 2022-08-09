@@ -17,6 +17,49 @@
     left: 0;
 }
 
-.active__menu-background {
-    background-color: #0c0c0c;
+.light__mode {
+    background-color: #CAE5FF;
+    color: var(--black-color);
+}
+
+.btnTheme {
+    padding: 0.7em;
+    cursor: pointer;
+    border-radius: 50%;
+
+    border: 1px solid black;
+}
+
+.btn__theme-container {
+    position: absolute;
+    top: 3.5%;
+    left: 5%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+}
+
+.header__light-mode {
+    background-color: var(--header-bg-light);
+    color: black;
+    border-width: 2px;
+}
+
+.color__black {
+    color: black;
+}
+
+.paragraph__email {
+    text-align: center;
+    font-size: var(--font-media);
+    border: 2px solid var(--purple-f);
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .btnTheme {
+        padding: 0.8em;
+    }
 }

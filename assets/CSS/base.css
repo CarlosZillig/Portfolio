@@ -2,6 +2,7 @@ body {
     font-family: var(--font-montserrat);
     background-color: var(--dark-bg);
     color: var(--white-f);
+    transition: .6s;
 }
 
 html {
@@ -11,6 +12,11 @@ html {
 
 main {
     padding: 0 4em;
+    position: relative;
+}
+
+a {
+    color: var(--white-f);
 }
 
 :root {
@@ -27,20 +33,21 @@ main {
 
     /*Font colors*/
     --white-f: rgb(255, 255, 255);
-    --purple-f: #6C63FF;
-    --blue-f: #73EEDC;
+    --purple-f: #048BA8;
+    --blue-f: #73a8ee;
 
     /*Colors*/
-    --white-color: #fff;
+    --white-color: rgb(255, 255, 255);
     --black-color: #000;
 
     /*Background colors*/
-    --dark-bg: #0F0F0F;
-    --light-bg: #57C4E5;
+    --dark-bg: #080808;
+    --light-bg: rgb(157, 161, 187);
     --purple-bg: #6C63FF;
 
     /*Background sections*/
-    --header-bg: hsla(240, 2%, 13%, 0.8);
+    --header-bg: hsla(240, 2%, 9%, 0.8);
+    --header-bg-light: #badce491;
 
     /*Hover and focus*/
     --button-h: #61bbbe;
@@ -58,16 +65,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-.paragraph__email {
-    text-align: center;
-    font-size: var(--font-media);
-    border: 2px solid var(--purple-bg);
-    padding: 0.5em;
-}
-
 .fa-link {
     font-size: 14px;
     padding: 0 0.5em 0 0;
+}
+
+.fa-brands {
+    margin-right: 10px;
 }
 
 .button {
@@ -76,8 +80,14 @@ body::-webkit-scrollbar-thumb {
     font-weight: 600;
 
     padding: 0.5em 1em;
-    background-image: linear-gradient(10deg, var(--purple-bg), var(--button-h));
-    border-radius: 20px;
+    border: 1px solid var(--blue-f);
+    border-radius: 10px;
+
+    transition: 1s all;
+}
+
+.button:hover {
+    background-color: var(--blue-f);
 }
 
 @media screen and (max-width: 600px) {
@@ -91,7 +101,7 @@ body::-webkit-scrollbar-thumb {
         font-weight: 600;
     
         padding: 0.5em 1em;
-        background-image: linear-gradient(10deg, var(--purple-bg), var(--button-h));
+        background-image: linear-gradient(10deg, var(--purple-f), var(--button-h));
         border-radius: 20px;
 
         font-size: var(--main-font-size);

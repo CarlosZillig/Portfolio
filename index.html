@@ -82,7 +82,7 @@
                     </li>
                 </ul>
                 <div class="header__btn-container">
-                    <button class="header__btn-close">Fechar</button>
+                    <button class="header__btn-close light__mode-on">Fechar</button>
                 </div>
             </nav>
         </div>
@@ -109,23 +109,35 @@
             </div>
         </header>
         
+        <div class="btn__theme-container">
+            <button type="button" class="btnTheme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            <p>Light/Dark mode</p>
+        </div>
+        
+
         <section class="presentation__section" id="presentation">
             <div class="presentation__container">
                 <h1 class="presentation__container-title">Olá, meu nome é <span class="presentation__span--name">Carlos Zillig</span></h1>
-                <span class="presentation__subtitle">Programador front-end para ajudar a dar vida a seu projeto. <span class="presentation-subtitle-span">Vamos conectar seus clientes com a sua empresa juntos!</span></span>
+                <span class="presentation__subtitle">Programador front-end para ajudar a dar vida ao seu projeto. <span class="presentation-subtitle-span">Vamos conectar seus clientes com a sua empresa juntos!</span></span>
+                <div class="presentation__subcontainer">
+                    <a href="https://www.linkedin.com/in/carloszillig/" class="presentation__btn presentation__btn-linkedin light__mode-on">Linkedin</a>
+                    <a href="https://github.com/CarlosZillig" class="presentation__btn presentation__btn-github light__mode-on">GitHub</a>
+                    <a href="url" download="#" class="presentation__btn presentation__btn-download light__mode-on"><i class="fa-solid fa-file-arrow-down"></i>Download CV</a>
+                    <p class="presentation__btn-download--span">CV ainda em desenvolvimento</p>
+                </div>
             </div>
             <div class="presentation__container presentation__container-image">
-                <img src="assets/images/initial_image.svg" alt="Foto de um SVG apenas para ilustrar" class="presentation__image">
+                <img src="assets/images/initial-image.svg" alt="Foto de um SVG apenas para ilustrar" class="presentation__image">
             </div>
         </section>
 
         <section class="about__section reveal" id="about">
             <div class="about__container about__container-image">
-                <img src="assets/images/about_image.svg" alt="" class="about__image">
+                <img src="assets/images/about-image.svg" alt="" class="about__image">
             </div>
             <div class="about__container">
                 <h2 class="about__title">Sobre</h2>
-                <p class="about__container-text">Me chamo Carlos Alexandre Zillig, moro em Pinhais/PR e tenho 18 anos. Sou estudante da <a href="https://www.alura.com.br/" class="about__alura">Alura</a> a alguns meses e é por lá que eu aprendo novas tecnologias.</p>
+                <p class="about__container-text">Me chamo Carlos Alexandre Zillig, moro em Pinhais/PR e tenho 18 anos. Sou estudante da <a href="https://www.alura.com.br/" class="about__alura light__mode-on">Alura</a> a alguns meses e é por lá que eu estudo novas tecnologias.</p>
                 <p class="about__container-text"><span class="about__container-span">Estou aqui para misturar a minha paixão com o seu empreendimento!</span></p>
             </div>
         </section>
@@ -134,7 +146,7 @@
             <div class="skills__container reveal">
                 <h2 class="skills__title">Habilidades</h2>
                 <div class="skills__sub-container">
-                    <span class="skills__span">HTML</span>
+                    <span class="skills__span"><i class="fa-brands fa-html5"></i>HTML</span>
                     <!--skill bar of progress-->
                     <div class="progress__container">
                         <div class="progress__bar progress__bar-html"></div>
@@ -142,7 +154,7 @@
                 </div>
      
                 <div class="skills__sub-container">
-                    <span class="skills__span">CSS</span>
+                    <span class="skills__span"><i class="fa-brands fa-css3-alt"></i>CSS</span>
                     <!--skill bar of progress-->
                     <div class="progress__container">
                         <div class="progress__bar progress__bar-css"></div>
@@ -150,7 +162,7 @@
                 </div>
 
                 <div class="skills__sub-container">
-                    <span class="skills__span">JavaScript</span>
+                    <span class="skills__span"><i class="fa-brands fa-js"></i>JavaScript</span>
                     <!--skill bar of progress-->
                     <div class="progress__container">
                         <div class="progress__bar progress__bar-js"></div>
@@ -161,7 +173,7 @@
             <div class="skills__container reveal skills__container-mobile">
                 <h2 class="skills__title">Frameworks e bibliotecas</h2>
                 <div class="skills__sub-container">
-                    <span class="skills__span">SASS</span>
+                    <span class="skills__span"><i class="fa-brands fa-sass"></i>SASS</span>
                     <!--skill bar of progress-->
                     <div class="progress__container">
                         <div class="progress__bar progress__bar-sass"></div>
@@ -169,7 +181,7 @@
                 </div>
      
                 <div class="skills__sub-container">
-                    <span class="skills__span">Tailwind</span>
+                    <span class="skills__span"><i class="fa-brands fa-css3-alt"></i>Tailwind</span>
                     <!--skill bar of progress-->
                     <div class="progress__container">
                         <div class="progress__bar progress__bar-tailwind"></div>
@@ -177,7 +189,7 @@
                 </div>
 
                 <div class="skills__sub-container">
-                    <span class="skills__span">ReactJS</span>
+                    <span class="skills__span"><i class="fa-brands fa-react"></i>ReactJS</span>
                     <!--skill bar of progress-->
                     <div class="progress__container">
                         <div class="progress__bar progress__bar-react"></div>
@@ -200,21 +212,21 @@
                         <h4 class="swiper__slide-title">Alura Books</h4>
                         <img src="assets/images/AluraBooks.png" alt="" class="swiper__slide-image">
                         <p class="swiper__slide-text">A ideia do projeto era fazer um site de vendas de livros. O site deveria ser responsivo e usar o swiper para construir o carrosel.</p>
-                        <a href="#" class="swiper__slide-see"><i class="fa-solid fa-eye"></i></a>
+                        <a href="https://github.com/CarlosZillig/Alura-books" class="swiper__slide-see"><i class="fa-solid fa-eye"></i></a>
                     </div>
 
                     <div class="swiper-slide">
                         <h4 class="swiper__slide-title">Seu Bolso</h4>
                         <img src="assets/images/SeuBolso.png" alt="" class="swiper__slide-image">
                         <p class="swiper__slide-text">Projeto totalmente idealizado por mim. Comecei a trabalhar com o SeuBolso para praticar minhas habilidades com JavaScript.</p>
-                        <a href="#" class="swiper__slide-see"><i class="fa-solid fa-eye"></i></a>
+                        <a href="https://carloszillig.github.io/SeuBolso/" class="swiper__slide-see"><i class="fa-solid fa-eye"></i></a>
                     </div>
 
                     <div class="swiper-slide">
                         <h4 class="swiper__slide-title">Apeperia</h4>
                         <img src="assets/images/Apeperia.png" alt="" class="swiper__slide-image">
                         <p class="swiper__slide-text">Projeto acadêmico onde o principal objetivo era aplicar conceitos de acessiblidade no site.</p>
-                        <a href="#" class="swiper__slide-see"><i class="fa-solid fa-eye"></i></a>
+                        <a href="https://carloszillig.github.io/Apeperia/" class="swiper__slide-see"><i class="fa-solid fa-eye"></i></a>
                     </div>
                     <div class="swiper-slide">
                         <h4 class="swiper__slide-title">To do list</h4>
@@ -226,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            <a href="projects.html" class="carousel__link button"><i class="fa-solid fa-link"></i>Ver todos</a>
+            <a href="projects.html" class="carousel__link button light__mode-on"><i class="fa-solid fa-link"></i>Ver todos</a>
         </section>
 
         <p class="paragraph__email display-none">carloszilligg@gmail.com</p>

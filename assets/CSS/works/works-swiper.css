@@ -5,7 +5,7 @@
 }
 
 .swiper-slide {
-    border: 1px solid;
+    border: 2px solid;
     animation: borderAnimation 2s infinite;
     border-radius: 10px;
     padding: 1em;
@@ -81,7 +81,6 @@
     .swiper {
         padding-top: 3em;
         width: 90vw;
-        height: 270px;
     }
 
     .swiper-slide {
