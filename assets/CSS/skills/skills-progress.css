@@ -20,11 +20,11 @@
     border-radius: 20px;
 }
 
-.progress__bar-html{width: 80%;}
-.progress__bar-css{width: 80%;}
-.progress__bar-js{width: 40%;}
-.progress__bar-sass{width: 30%;}
-.progress__bar-tailwind{width: 70%;}
+.progress__bar-html{width: 90%;}
+.progress__bar-css{width: 90%;}
+.progress__bar-js{width: 60%;}
+.progress__bar-sass{width: 70%;}
+.progress__bar-tailwind{width: 50%;}
 .progress__bar-react{width: 0%;}
 
 @media screen and (max-width: 600px) {

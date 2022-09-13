@@ -1,0 +1,9 @@
+.experience__section {
+    padding: 8em 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+    .experience__section {
+        padding: 4em 0;
+    }
+}
