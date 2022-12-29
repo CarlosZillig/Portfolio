@@ -48,6 +48,7 @@ a {
     /*Background sections*/
     --header-bg: hsla(240, 2%, 9%, 0.8);
     --header-bg-light: #badce491;
+    --see: hsla(240, 2%, 22%, 0.8);
 
     /*Hover and focus*/
     --button-h: #61bbbe;
