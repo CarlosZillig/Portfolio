@@ -41,6 +41,11 @@
 
     .projects__image {
         max-width: 100%;
-        height: 200px;
+        height: 100%;
+    }
+
+    .projects__container-text {
+        font-size: 1em;
+        padding: 1em 0;
     }
 }

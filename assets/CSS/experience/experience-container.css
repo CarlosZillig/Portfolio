@@ -23,9 +23,18 @@
     font-size: var(--font-media);
     font-weight: 300;
     line-height: 1.2;
+    list-style: circle;
+    padding: 0 0 0 1em;
 }
 
 @media screen and (max-width: 600px) {
+    .experience__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 3em 0 0 0;
+    }
+
     .experience__list {
         display: block;
     }

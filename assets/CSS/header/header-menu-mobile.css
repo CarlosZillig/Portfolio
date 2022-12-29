@@ -13,7 +13,7 @@
         position: fixed;
         display: block;
         top: 0;
-        left: -300px;
+        left: -600px;
         width: 70vw;
         height: 100vh;
         background-color: var(--dark-bg);

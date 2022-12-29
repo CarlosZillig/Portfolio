@@ -23,9 +23,12 @@
 .progress__bar-html{width: 90%;}
 .progress__bar-css{width: 90%;}
 .progress__bar-js{width: 60%;}
-.progress__bar-sass{width: 70%;}
-.progress__bar-tailwind{width: 50%;}
-.progress__bar-react{width: 0%;}
+.progress__bar-ts{width: 50%;}
+.progress__bar-sass{width: 90%;}
+.progress__bar-tailwind{width: 80%;}
+.progress__bar-bootstrap{width: 40%;}
+.progress__bar-react{width: 50%;}
+
 
 @media screen and (max-width: 600px) {
     .skills__span {
